@@ -1,0 +1,4 @@
+func (repo *GitRepository) branch(newBranch string) {
+ repo.branches[newBranch] = append([]string{}, repo.branches[repo.currentBranch]...)
+ fmt.Printf("Created branch: %s\n", newBranch)
+}
